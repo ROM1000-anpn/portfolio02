@@ -10,7 +10,7 @@ npm install --save-dev gatsby-cli
 ```
 
 ```
-gatsby new portfolio02 
+gatsby new portfolio02 https://github.com/JuanJavier1979/gatsby-starter-default-nostyles
 ```
 
 ```
