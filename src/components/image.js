@@ -22,8 +22,8 @@ const Image = (props) => (
             relativePath
             name
             childImageSharp {
-              sizes(maxWidth: 600) {
-                ...GatsbyImageSharpSizes
+              fluid(maxWidth: 600) {
+                ...GatsbyImageSharpFluid
               }
             }
           }
@@ -39,9 +39,8 @@ const Image = (props) => (
       return null;
     }
 
-    const imageSizes = image.node.childImageSharp.sizes;
     return (
-      <Img alt={props.alt} sizes={imageSizes} />
+      <Img alt={props.alt} fluid={image.node.childImageSharp.fluid} />
     );
   }}
 /> )

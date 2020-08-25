@@ -9,6 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Styles from '../scss/global.scss'
+
 import Header from "./header"
 
 const Layout = ({ children }) => {
@@ -28,9 +30,9 @@ const Layout = ({ children }) => {
       <div>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
+          © {new Date().getFullYear()},
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <span>Yamaoka Miharu</span>
         </footer>
       </div>
     </>
